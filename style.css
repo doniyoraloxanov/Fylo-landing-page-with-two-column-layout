@@ -1,0 +1,193 @@
+/*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+            */
+
+/*
+            */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+/*******************************/
+/* NAVIGATION */
+/*******************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 62px 48px 62px;
+}
+.proudct-logo {
+  width: 100px;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+/*******************************/
+/* HERO SECTION*/
+/*******************************/
+
+.section-hero {
+  padding: 128px 62px;
+}
+
+.hero {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* .hero-text-box {
+            } */
+
+.heading-primary {
+  font-size: 44px;
+  line-height: 1.2;
+  letter-spacing: -075;
+  margin-bottom: 16px;
+}
+.hero-description {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-form {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-form input {
+  height: 32px;
+  width: 200px;
+  border: 1px solid #333;
+}
+
+.btn {
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  border: none;
+  padding: 0 48px;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+}
+
+/*******************************/
+/* FEATUERS SECTION*/
+/*******************************/
+
+.section-features {
+  padding: 128px 0 128px 0;
+  background-image: url(images/bg-curve-desktop.svg);
+}
+.features {
+  padding: 0 32px;
+}
+.heading-secondary {
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.feature-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.feature-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link {
+  color: hsl(170, 45%, 43%);
+  border-bottom: 1.3px solid hsl(170, 45%, 43%);
+  text-decoration: none;
+
+  display: inline-block;
+  padding-bottom: 5px;
+  list-style: none;
+}
+
+.learn-more img {
+  border: none;
+}
+
+.fetaure-logo {
+  width: 100%;
+}
+
+/*******************************/
+/* TESTIMONIAL SECTION*/
+/*******************************/
